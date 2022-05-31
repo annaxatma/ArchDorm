@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0468EC4D2845AD2300673EB8 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0468EC4C2845AD2300673EB8 /* SplashScreen.swift */; };
+		0468EC502845AE8600673EB8 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0468EC4F2845AE8600673EB8 /* SDWebImageSwiftUI */; };
+		0468EC522845B23200673EB8 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0468EC512845B23200673EB8 /* Home.swift */; };
 		048F135B284225370042BF15 /* ArchDormApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F135A284225370042BF15 /* ArchDormApp.swift */; };
 		048F135D284225370042BF15 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F135C284225370042BF15 /* ContentView.swift */; };
 		048F135F284225380042BF15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 048F135E284225380042BF15 /* Assets.xcassets */; };
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0468EC4C2845AD2300673EB8 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		0468EC512845B23200673EB8 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		048F1357284225370042BF15 /* ArchDorm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArchDorm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		048F135A284225370042BF15 /* ArchDormApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchDormApp.swift; sourceTree = "<group>"; };
 		048F135C284225370042BF15 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0468EC502845AE8600673EB8 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +77,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0468EC4B2845ACFB00673EB8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0468EC4C2845AD2300673EB8 /* SplashScreen.swift */,
+				0468EC512845B23200673EB8 /* Home.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		048F134E284225370042BF15 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +109,7 @@
 		048F1359284225370042BF15 /* ArchDorm */ = {
 			isa = PBXGroup;
 			children = (
+				0468EC4B2845ACFB00673EB8 /* Views */,
 				048F135A284225370042BF15 /* ArchDormApp.swift */,
 				048F135C284225370042BF15 /* ContentView.swift */,
 				048F135E284225380042BF15 /* Assets.xcassets */,
@@ -143,6 +159,9 @@
 			dependencies = (
 			);
 			name = ArchDorm;
+			packageProductDependencies = (
+				0468EC4F2845AE8600673EB8 /* SDWebImageSwiftUI */,
+			);
 			productName = ArchDorm;
 			productReference = 048F1357284225370042BF15 /* ArchDorm.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +234,9 @@
 				Base,
 			);
 			mainGroup = 048F134E284225370042BF15;
+			packageReferences = (
+				0468EC4E2845AE8600673EB8 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 048F1358284225370042BF15 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,7 +279,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0468EC4D2845AD2300673EB8 /* SplashScreen.swift in Sources */,
 				048F135D284225370042BF15 /* ContentView.swift in Sources */,
+				0468EC522845B23200673EB8 /* Home.swift in Sources */,
 				048F135B284225370042BF15 /* ArchDormApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -585,6 +609,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0468EC4E2845AE8600673EB8 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0468EC4F2845AE8600673EB8 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0468EC4E2845AE8600673EB8 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 048F134F284225370042BF15 /* Project object */;
 }

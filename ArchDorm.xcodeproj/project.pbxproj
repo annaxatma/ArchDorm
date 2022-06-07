@@ -17,6 +17,7 @@
 		048F136C284225380042BF15 /* ArchDormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F136B284225380042BF15 /* ArchDormTests.swift */; };
 		048F1376284225380042BF15 /* ArchDormUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F1375284225380042BF15 /* ArchDormUITests.swift */; };
 		048F1378284225380042BF15 /* ArchDormUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F1377284225380042BF15 /* ArchDormUITestsLaunchTests.swift */; };
+		04A3ED71284CB96B0092AB69 /* Dorm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3ED70284CB96B0092AB69 /* Dorm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		048F1371284225380042BF15 /* ArchDormUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchDormUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		048F1375284225380042BF15 /* ArchDormUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchDormUITests.swift; sourceTree = "<group>"; };
 		048F1377284225380042BF15 /* ArchDormUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchDormUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		04A3ED70284CB96B0092AB69 /* Dorm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dorm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		048F1359284225370042BF15 /* ArchDorm */ = {
 			isa = PBXGroup;
 			children = (
+				04A3ED6F284CB9210092AB69 /* Models */,
 				0468EC4B2845ACFB00673EB8 /* Views */,
 				048F135A284225370042BF15 /* ArchDormApp.swift */,
 				048F135C284225370042BF15 /* ContentView.swift */,
@@ -141,6 +144,14 @@
 				048F1377284225380042BF15 /* ArchDormUITestsLaunchTests.swift */,
 			);
 			path = ArchDormUITests;
+			sourceTree = "<group>";
+		};
+		04A3ED6F284CB9210092AB69 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04A3ED70284CB96B0092AB69 /* Dorm.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +292,7 @@
 			files = (
 				0468EC4D2845AD2300673EB8 /* SplashScreen.swift in Sources */,
 				048F135D284225370042BF15 /* ContentView.swift in Sources */,
+				04A3ED71284CB96B0092AB69 /* Dorm.swift in Sources */,
 				0468EC522845B23200673EB8 /* Home.swift in Sources */,
 				048F135B284225370042BF15 /* ArchDormApp.swift in Sources */,
 			);
